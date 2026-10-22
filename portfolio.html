@@ -4,22 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - My Projects</title>
+  <title>Portfolio - Temitope Falade</title>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Fonts (same as the animation Index.html) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?v=2" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-page">
@@ -32,7 +34,6 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -45,16 +46,13 @@
 
   <!-- Portfolio Categories Section -->
    <section id="portfolio" class="portfolio section"
-      style="background: url('assets/img/bg_houserender.png') center center/cover no-repeat; position: relative; overflow: hidden;">
+      style="background: url('assets/img/bgrender2.jpg') center center/cover no-repeat; position: relative; overflow: hidden;">
       <div
         style="position:absolute; inset:0; background:rgba(0,0,0,0.75); backdrop-filter: blur(3px); z-index:0;"></div>
 
 
   <!-- change the container so content sits above overlay -->
   <div class="container" data-aos="fade-up" data-aos-delay="100" style="position:relative; z-index:1;">
-    <!-- ...existing Resume content below -->
-
-
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
@@ -64,20 +62,76 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
 
-          <!-- 3D Projects Card -->
+          <!--
+            PLACEHOLDER IMAGES: each card below uses a built-in placeholder (no file needed).
+            To use a real image, replace the whole src="data:image/svg+xml..." value with a path,
+            e.g. src="assets/img/portfolio/game-cinematic.jpg"
+          -->
+
+          <!-- Game Cinematic Animation Card -->
           <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='3d-projects.html';">
+            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='game-cinematic-animation.html';">
               <div class="portfolio-img mb-3">
-                <img src="assets/img/portfolio/3D.png" class="img-fluid rounded" alt="3D Projects">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23262d40'/%3E%3Cstop offset='1' stop-color='%2310131b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g)'/%3E%3Ctext x='300' y='210' font-family='Arial,sans-serif' font-size='26' fill='%23ffffff' fill-opacity='0.55' text-anchor='middle'%3EGame Cinematic Animation%3C/text%3E%3C/svg%3E" class="img-fluid rounded" alt="Game Cinematic Animation">
               </div>
-              <h4>3D PROJECTS</h4>
-              <p>Explore my 3D animation projects with more details.</p>
-              <a href="3d-projects.html" class="btn btn-primary mt-2">View 3D Works</a>
+              <h4>GAME CINEMATIC ANIMATION</h4>
+              <p>Story-driven cutscenes and cinematic sequences for games, built in Maya and Unreal Engine 5.</p>
+              <a href="game-cinematic-animation.html" class="btn btn-primary mt-2">View Cinematics</a>
+            </div>
+          </div>
+
+          <!-- Gameplay Animation Card -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='gameplay-animation.html';">
+              <div class="portfolio-img mb-3">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23262d40'/%3E%3Cstop offset='1' stop-color='%2310131b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g)'/%3E%3Ctext x='300' y='210' font-family='Arial,sans-serif' font-size='26' fill='%23ffffff' fill-opacity='0.55' text-anchor='middle'%3EGameplay Animation%3C/text%3E%3C/svg%3E" class="img-fluid rounded" alt="Gameplay Animation">
+              </div>
+              <h4>GAMEPLAY ANIMATION</h4>
+              <p>Real-time character and creature animation made for gameplay, from locomotion to combat.</p>
+              <a href="gameplay-animation.html" class="btn btn-primary mt-2">View Gameplay Animation</a>
+            </div>
+          </div>
+
+          <!-- Character Performance Animation Card -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='character-performance-animation.html';">
+              <div class="portfolio-img mb-3">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23262d40'/%3E%3Cstop offset='1' stop-color='%2310131b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g)'/%3E%3Ctext x='300' y='210' font-family='Arial,sans-serif' font-size='26' fill='%23ffffff' fill-opacity='0.55' text-anchor='middle'%3ECharacter Performance Animation%3C/text%3E%3C/svg%3E" class="img-fluid rounded" alt="Character Performance Animation">
+              </div>
+              <h4>CHARACTER PERFORMANCE ANIMATION</h4>
+              <p>Acting-driven character animation focused on emotion, timing, and believable performance.</p>
+              <a href="character-performance-animation.html" class="btn btn-primary mt-2">View Performances</a>
+            </div>
+          </div>
+
+          <!-- Personal Works Card -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='personal-works.html';">
+              <div class="portfolio-img mb-3">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23262d40'/%3E%3Cstop offset='1' stop-color='%2310131b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g)'/%3E%3Ctext x='300' y='210' font-family='Arial,sans-serif' font-size='26' fill='%23ffffff' fill-opacity='0.55' text-anchor='middle'%3EPersonal Works%3C/text%3E%3C/svg%3E" class="img-fluid rounded" alt="Personal Works">
+              </div>
+              <h4>PERSONAL WORKS</h4>
+              <p>Self-initiated projects and short films where I explore my own ideas, stories, and styles.</p>
+              <a href="personal-works.html" class="btn btn-primary mt-2">View Personal Works</a>
+            </div>
+          </div>
+
+          <!-- Featured Clients Work Card -->
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="portfolio-card h-100 text-center p-4" style="cursor:pointer;" onclick="location.href='featured-clients-work.html';">
+              <div class="portfolio-img mb-3">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23262d40'/%3E%3Cstop offset='1' stop-color='%2310131b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23g)'/%3E%3Ctext x='300' y='210' font-family='Arial,sans-serif' font-size='26' fill='%23ffffff' fill-opacity='0.55' text-anchor='middle'%3EFeatured Clients Work%3C/text%3E%3C/svg%3E" class="img-fluid rounded" alt="Featured Clients Work">
+              </div>
+              <h4>FEATURED CLIENTS WORK</h4>
+              <p>Selected animation and commercial projects delivered for studios, brands, and clients.</p>
+              <a href="featured-clients-work.html" class="btn btn-primary mt-2">View Client Works</a>
             </div>
           </div>
 
         </div>
       </div>
+
+  </div>
 
     </section><!-- End Portfolio Categories Section -->
 
@@ -98,10 +152,6 @@
       </div>
 
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -110,12 +160,19 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files (same set as the animation Index.html so main.js behaves identically) -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Main JS File -->
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
