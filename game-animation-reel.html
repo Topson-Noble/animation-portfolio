@@ -1,65 +1,123 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Game Animation Reel — Temitope Falade</title>
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Animation Projects - Portfolio</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts (same as the game dev portfolio) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/css/main.css" rel="stylesheet">
-  <style>
-    /* === DROPDOWN NAV === */
-    .navmenu ul li.has-dropdown { position: relative; }
-    .navmenu ul li.has-dropdown .dropdown-panel {
-      display: none; position: absolute; top: 100%; left: 0;
-      min-width: 230px; background: #fff; border: 1px solid #e0e0e0;
-      border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      padding: 6px 0; z-index: 9999; list-style: none; margin: 0;
-    }
-    .navmenu ul li.has-dropdown:hover .dropdown-panel,
-    .navmenu ul li.has-dropdown:focus-within .dropdown-panel { display: block; }
-    .navmenu ul li.has-dropdown .dropdown-panel li a {
-      display: block; padding: 9px 20px; font-size: 0.875rem;
-      color: #444; white-space: nowrap; transition: background 0.15s, color 0.15s; text-decoration: none;
-    }
-    .navmenu ul li.has-dropdown .dropdown-panel li a:hover { background: #f5f5f5; color: #000; }
-    .navmenu ul li.has-dropdown > a::after { content: " \25BE"; font-size: 0.65rem; opacity: 0.6; }
-    .navmenu ul li.has-dropdown .dropdown-panel li.has-sub { position: relative; }
-    .navmenu ul li.has-dropdown .dropdown-panel li.has-sub > a::after { content: " \203A"; float: right; font-size: 0.9rem; opacity: 0.5; }
-    .navmenu ul li.has-dropdown .dropdown-panel li.has-sub .sub-panel {
-      display: none; position: absolute; top: 0; left: 100%;
-      min-width: 200px; background: #fff; border: 1px solid #e0e0e0;
-      border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      padding: 6px 0; list-style: none; margin: 0; z-index: 10000;
-    }
-    .navmenu ul li.has-dropdown .dropdown-panel li.has-sub:hover .sub-panel { display: block; }
-    .dropdown-panel .dropdown-divider-line { height: 1px; background: #ebebeb; margin: 5px 0; }
-    /* === VIDEO ===*/
-    .project-video iframe { width: 100%; height: 500px; border-radius: 10px; }
-    /* === DESCRIPTION GRID === */
-    .description-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 3rem; }
-    @media (max-width: 991px) { .description-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 575px) { .description-grid { grid-template-columns: 1fr; } }
-    .desc-card {
-      height: 260px; border: 1px solid rgba(255,255,255,0.75); border-radius: 10px;
-      padding: 1.1rem 1rem 1rem 1.1rem; overflow-y: auto; overflow-x: hidden;
-      background: transparent; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.5) transparent;
-    }
-    .desc-card::-webkit-scrollbar { width: 6px; }
-    .desc-card::-webkit-scrollbar-track { background: transparent; }
-    .desc-card::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,0.45); border-radius: 10px; }
-    .desc-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.55rem; color: #ffffff; }
-    .desc-card p { font-size: 0.875rem; line-height: 1.6; color: #ffffff; margin-bottom: 0.4rem; }
-    .back-btn { margin-top: 2.5rem; margin-bottom: 1rem; }
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=3" rel="stylesheet">
+
+  <style>
+    /* =====================================================
+       FONT + TEXT COLOUR MATCH (game dev look)
+       -----------------------------------------------------
+       The animation site's main.css uses Roboto / Poppins /
+       Raleway. These variables switch THIS PAGE ONLY to the
+       game dev fonts (Orbitron headings, Work Sans body,
+       Chakra Petch menu) and light text on the dark background.
+       If you later copy the game dev main.css into the animation
+       site, you can delete this whole block.
+       ===================================================== */
+    :root {
+      --default-font: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      --heading-font: "Orbitron", sans-serif;
+      --nav-font:     "Chakra Petch", sans-serif;
+    }
+
+    body.portfolio-page {
+      font-family: var(--default-font);
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+      font-family: var(--nav-font);
+    }
+
+    .game-projects {
+      --default-color: #e8eaf0;
+      --heading-color: #ffffff;
+      color: var(--default-color);
+    }
+
+    .game-projects h2,
+    .game-projects h4 {
+      font-family: var(--heading-font);
+      color: var(--heading-color);
+    }
+
+    /* =====================================================
+       CARD STYLE — identical to game dev portfolio
+       ===================================================== */
+    .portfolio-card {
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.35s ease, border-color 0.35s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.45) !important;
+    }
+
+    .portfolio-card .portfolio-img {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .portfolio-card .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .portfolio-card:hover .portfolio-img img {
+      transform: scale(1.08);
+    }
+
+    .portfolio-card h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .portfolio-card p {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    /* Pin View button to the bottom of every card */
+    .portfolio-card .btn {
+      margin-top: auto;
+      padding-top: 1rem;
+      align-self: center;
+    }
   </style>
 </head>
 
@@ -70,32 +128,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-
-          <!-- CLIENT WORKS -->
-          <li class="has-dropdown">
-            <a href="#">Client Works</a>
-            <ul class="dropdown-panel">
-              <li><a href="Afrime Studio.html">Afrime Studio</a></li>
-              <li><a href="Elamigos Foodtruck Commercials.html">Elamigos Foodtruck Commercials</a></li>
-              <!-- ADD MORE: duplicate a <li> line above -->
-            </ul>
-          </li>
-
-          <li class="has-dropdown">
-            <a href="#">Portfolio</a>
-            <ul class="dropdown-panel">
-              <li><a href="creature-gameplay-animation-reel.html">Creature Animation Reel</a></li>
-              <li><a href="game-animation-reel.html">Game Animation Reel</a></li>
-              <li><a href="3d-animation-demo-reel.html">Character Animation Reel</a></li>
-              <li class="dropdown-divider-line"></li>
-              <li class="has-sub">
-                <a href="#">Personal Works</a>
-                <ul class="sub-panel">
-                  <li><a href="new-beginning.html">New Beginning</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
