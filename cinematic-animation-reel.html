@@ -1,0 +1,203 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Animation Projects - Portfolio</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts (same as the game dev portfolio) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=3" rel="stylesheet">
+
+  <style>
+    /* =====================================================
+       FONT + TEXT COLOUR MATCH (game dev look)
+       -----------------------------------------------------
+       The animation site's main.css uses Roboto / Poppins /
+       Raleway. These variables switch THIS PAGE ONLY to the
+       game dev fonts (Orbitron headings, Work Sans body,
+       Chakra Petch menu) and light text on the dark background.
+       If you later copy the game dev main.css into the animation
+       site, you can delete this whole block.
+       ===================================================== */
+    :root {
+      --default-font: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      --heading-font: "Orbitron", sans-serif;
+      --nav-font:     "Chakra Petch", sans-serif;
+    }
+
+    body.portfolio-page {
+      font-family: var(--default-font);
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+      font-family: var(--nav-font);
+    }
+
+    .game-projects {
+      --default-color: #e8eaf0;
+      --heading-color: #ffffff;
+      color: var(--default-color);
+    }
+
+    .game-projects h2,
+    .game-projects h4 {
+      font-family: var(--heading-font);
+      color: var(--heading-color);
+    }
+
+    /* =====================================================
+       CARD STYLE — identical to game dev portfolio
+       ===================================================== */
+    .portfolio-card {
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.35s ease, border-color 0.35s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.45) !important;
+    }
+
+    .portfolio-card .portfolio-img {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .portfolio-card .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .portfolio-card:hover .portfolio-img img {
+      transform: scale(1.08);
+    }
+
+    .portfolio-card h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .portfolio-card p {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    /* Pin View button to the bottom of every card */
+    .portfolio-card .btn {
+      margin-top: auto;
+      padding-top: 1rem;
+      align-self: center;
+    }
+  </style>
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="project-details" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Character Animation Demo Reel</h2>
+        <p>A compilation of character animation exercises and personal projects demonstrating my versatility as a 3D Animator.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="ratio ratio-16x9 mb-4">
+          <iframe src="https://player.vimeo.com/video/1182846281" title="Character Animation Demo Reel"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="description-grid" data-aos="fade-up">
+          <div class="desc-card">
+            <h4>Project Overview</h4>
+            <p>This reel is a compilation of several animation exercises and personal projects created to demonstrate my versatility and skill as a 3D Character Animator. It brings together acting, body mechanics, and pantomime performances, each designed to showcase core animation principles such as weight, timing, emotion, anticipation, and rhythm.</p>
+          </div>
+          <div class="desc-card">
+            <h4>Technical Details</h4>
+            <p>All animations were created in Autodesk Maya, with final rendering done using VRay. Character rigs used are free online rigs. The goal was to highlight storytelling through motion, weight distribution, and expressive timing across varied contexts.</p>
+          </div>
+          <div class="desc-card">
+            <h4>Role &amp; Focus</h4>
+            <p>- Sole Animator on all shots.</p>
+            <p>- Responsible for blocking, polishing, and camera composition.</p>
+            <p>- Focused on performance, timing, and expressive body language.</p>
+            <p>- Used different lighting setups and render styles to suit each mood.</p>
+          </div>
+          <div class="desc-card" style="grid-column: 1 / -1; height: 140px;">
+            <h4>Objective</h4>
+            <p>This demo reel serves as a visual summary of my growth and range as an animator, bringing together both technical precision and emotional storytelling.</p>
+          </div>
+        </div>
+        <div class="text-center back-btn" data-aos="fade-up">
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>&#169; <span>Copyright</span> <strong class="px-1 sitename">Temitope Falade</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center" data-aos="fade-up" data-aos-delay="600">
+        <a href="https://www.linkedin.com/in/temitope-falade-578107120/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/topson_noble/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://vimeo.com/topson" target="_blank"><i class="bi bi-vimeo"></i></a>
+        <a href="https://www.facebook.com/iam.topson/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/Topson_noble" target="_blank"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
